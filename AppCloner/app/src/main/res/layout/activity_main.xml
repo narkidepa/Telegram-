@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APP CLONER PRO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="#16213e"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@android:drawable/ic_menu_gallery"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/text_selected_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select an app below"
+                    android:textColor="#00ff00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap app in list to select"
+                    android:textColor="#888888"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMIZE CLONE"
+            android:textColor="#e94560"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New App Name"
+            android:textColor="#ffffff"
+            android:textColorHint="#666666"
+            android:background="#16213e"
+            android:padding="12dp"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/edit_package_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Package Name (e.g., com.app.clone2)"
+            android:textColor="#ffffff"
+            android:textColorHint="#666666"
+            android:background="#16213e"
+            android:padding="12dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btn_change_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Icon (Select from Gallery)"
+            android:background="#0f3460"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:padding="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Original"
+                    android:textColor="#888888"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/img_icon_original"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@android:drawable/ic_menu_gallery"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="→"
+                android:textColor="#00ff00"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preview"
+                    android:textColor="#00ff00"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/img_preview_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@android:drawable/ic_menu_gallery"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PREVIEW: App Name Clone\nPackage: com.example.clone"
+            android:textColor="#00ff00"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:background="#0f3460"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/btn_quick_clone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quick Clone"
+                android:textSize="11sp"
+                android:background="#0f3460"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="3dp"/>
+
+            <Button
+                android:id="@+id/btn_clone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Create Clone"
+                android:textSize="11sp"
+                android:background="#e94560"
+                android:textColor="#ffffff"
+                android:layout_marginStart="3dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh App List"
+            android:layout_margin="5dp"
+            android:background="#16213e"
+            android:textColor="#888888"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSTALLED APPS:"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:padding="5dp"/>
+
+        <ListView
+            android:id="@+id/list_apps"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#0f3460"
+            android:divider="#1a1a2e"
+            android:dividerHeight="1dp"/>
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready! Select an app to clone."
+            android:textColor="#00ff00"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:background="#16213e"/>
+
+    </LinearLayout>
+
+</ScrollView>
